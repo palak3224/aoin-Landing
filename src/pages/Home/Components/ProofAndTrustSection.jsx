@@ -367,7 +367,7 @@ const ProofAndTrustSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Proof & Trust
+            Why Choose Aoinstore?
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-600 max-w-2xl mx-auto"
@@ -375,7 +375,7 @@ const ProofAndTrustSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Join successful brands already growing with Aoinstore
+            See the clear advantage over traditional marketplaces
           </motion.p>
         </div>
 
@@ -388,14 +388,14 @@ const ProofAndTrustSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="text-center mb-12">
+          {/* <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Why Choose Aoinstore?
             </h3>
             <p className="text-lg text-gray-600">
               See the clear advantage over traditional marketplaces
             </p>
-          </div>
+          </div> */}
 
           <div className="grid gap-8">
             {/* Platform Headers */}
