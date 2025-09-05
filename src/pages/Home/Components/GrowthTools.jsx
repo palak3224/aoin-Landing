@@ -47,7 +47,7 @@ const GrowthTools = () => {
                 <div className="bg-orange-100 p-3 rounded-lg">
                   <BarChart3 className="w-6 h-6 text-orange-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-black">📊 Smart Dashboard</h3>
+                <h3 className="text-2xl font-bold text-black">Smart Dashboard</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Track real-time sales & performance with our intuitive dashboard. Get comprehensive insights 
@@ -101,7 +101,7 @@ const GrowthTools = () => {
                 <div className="bg-orange-100 p-3 rounded-lg">
                   <TrendingUp className="w-6 h-6 text-orange-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-black">🤖 AI Market Insights</h3>
+                <h3 className="text-2xl font-bold text-black">AI Market Insights</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Discover what's trending in your target markets with AI-powered analytics. Stay ahead of 
@@ -128,7 +128,7 @@ const GrowthTools = () => {
                 <div className="bg-orange-100 p-3 rounded-lg">
                   <Megaphone className="w-6 h-6 text-orange-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-black">🎯 Marketing Boosters</h3>
+                <h3 className="text-2xl font-bold text-black">Marketing Boosters</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Sponsored listings and co-branding campaigns to boost visibility. Amplify your reach 

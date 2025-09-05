@@ -144,7 +144,7 @@ const HowItWorksSection = () => {
                       <img
                         src={step.image}
                         alt={step.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-fit"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 via-transparent to-transparent" />
                     </motion.div>

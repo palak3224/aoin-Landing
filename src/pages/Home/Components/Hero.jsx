@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react';
-import  HeroImg from '@/assets/hero.png';
+import HeroImg from '@/assets/hero.png';
+import SupHero1Img from '@/assets/sup-hero1.png';
+import SupHero2Img from '@/assets/sup-hero2.png';
+import SupHero3Img from '@/assets/sup-hero3.png';
+import { motion } from "framer-motion";
+
+
 
 // Mock hero image for demo
 // const HeroImg = "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=600&fit=crop";
@@ -29,7 +35,7 @@ const AuroraBackground = ({
                absolute -inset-[10px] opacity-50 will-change-transform
                pointer-events-none filter blur-[10px] invert dark:invert-0`,
               showRadialGradient &&
-                `aurora-mask`
+              `aurora-mask`
             )}
             style={{
               backgroundImage: `
@@ -40,7 +46,7 @@ const AuroraBackground = ({
               backgroundPosition: '50% 50%, 50% 50%'
             }}
           >
-            <div 
+            <div
               className="aurora-after absolute inset-0 mix-blend-difference"
               style={{
                 backgroundImage: `
@@ -52,7 +58,7 @@ const AuroraBackground = ({
               }}
             ></div>
           </div>
-          
+
           {/* Dark mode version */}
           <div
             className={cn(
@@ -60,7 +66,7 @@ const AuroraBackground = ({
                absolute -inset-[10px] opacity-50 will-change-transform
                pointer-events-none filter blur-[10px]`,
               showRadialGradient &&
-                `aurora-mask`
+              `aurora-mask`
             )}
             style={{
               backgroundImage: `
@@ -71,7 +77,7 @@ const AuroraBackground = ({
               backgroundPosition: '50% 50%, 50% 50%'
             }}
           >
-            <div 
+            <div
               className="aurora-after absolute inset-0 mix-blend-difference"
               style={{
                 backgroundImage: `
@@ -137,7 +143,7 @@ const HeroHeader = () => {
       <div className="relative z-10 w-full max-w-7xl mx-auto">
         {/* Hero Content - Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-screen py-16 sm:py-20">
-          
+
           {/* Left Side - Text Content */}
           <div className="text-left order-2 lg:order-1">
             {/* Hero Title */}
@@ -147,19 +153,19 @@ const HeroHeader = () => {
                 Partner with Aoinstore.
               </span>
             </h1>
-            
+
             {/* Hero Subtitle */}
             <p className="text-base sm:text-lg md:text-xl text-orange-600 mb-6 sm:mb-8 leading-relaxed max-w-xl">
               Expand your brand into the U.S., UK, and Australian markets with zero upfront cost and higher margins.
             </p>
-            
+
             {/* CTA Button */}
             <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8">
               <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-orange-50 font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25">
                 Apply to Become a Partner
               </button>
             </div>
-            
+
             {/* Feature Pills */}
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-12">
               {['Zero Upfront Cost', 'Higher Margins', 'Global Reach', '3 Markets'].map((feature) => (
@@ -171,7 +177,7 @@ const HeroHeader = () => {
                 </span>
               ))}
             </div>
-            
+
             {/* Stats Section */}
             <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-md">
               <div className="text-center sm:text-left">
@@ -188,33 +194,49 @@ const HeroHeader = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Right Side - Image */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2 p-12 md:p-0">
             <div className="relative w-full max-w-md sm:max-w-lg lg:max-w-none">
-              <img 
+              {/* Main Hero Image */}
+              <img
                 src={HeroImg}
                 alt="Aoinstore Partnership Success"
-                className="w-full h-auto rounded-2xl transform hover:scale-105 transition-transform duration-300 "
-                style={{ 
-                  // maxHeight: '400px', 
-                  objectFit: 'fit',
-                  '@media (min-width: 640px)': {
-                    maxHeight: '500px'
-                  },
-                  '@media (min-width: 1024px)': {
-                    maxHeight: '600px'
-                  }
-                }}
+                className="w-full h-auto rounded-2xl transform hover:scale-105 transition-transform duration-300"
+                style={{ objectFit: 'cover' }}
               />
-              {/* Image Overlay Effect */}
-              {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-orange-500/10 to-transparent pointer-events-none"></div> */}
+
+              {/* Supporting Images */}
+              <motion.img
+  src={SupHero1Img}
+  alt="Supporting Top Left"
+  className="absolute -top-6 -left-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
+  animate={{ y: [0, -20, 0] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+/>
+
+<motion.img
+  src={SupHero2Img}
+  alt="Supporting Top Right"
+  className="absolute -top-6 -right-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
+  animate={{ x: [0, 20, 0] }}
+  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+/>
+
+<motion.img
+  src={SupHero3Img}
+  alt="Supporting Bottom Left"
+  className="absolute -bottom-6 -left-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
+  animate={{ y: [0, 20, 0] }}
+  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+/>
             </div>
           </div>
-          
+
+
         </div>
       </div>
-      
+
       {/* Scroll Indicator - Hidden on mobile */}
       <div className="hidden sm:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 text-orange-600 animate-bounce">
         <div className="flex flex-col items-center">
