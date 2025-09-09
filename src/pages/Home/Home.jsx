@@ -7,10 +7,12 @@ import GrowthTools from './Components/GrowthTools'
 import TrustCarousel from './Components/TrustCarousel'
 import FAQSection from './Components/FAQSection'
 import PremiumFooter from '@/component/PremiumFooter'
+import BottomRightPopup from '@/component/BottomRightPopup'
 
 function Home() {
   return (
     <div>
+      <BottomRightPopup />
       <HeroSection />
       <BenefitsSection />
       <HowItWorksSection />
