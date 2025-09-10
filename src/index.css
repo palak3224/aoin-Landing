@@ -117,3 +117,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.laptop-video {
+  mix-blend-mode: screen; /* or lighten/difference depending on effect */
+}
