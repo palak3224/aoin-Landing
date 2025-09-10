@@ -4,6 +4,8 @@ import SupHero1Img from '@/assets/sup-hero1.png';
 import SupHero2Img from '@/assets/sup-hero2.png';
 import SupHero3Img from '@/assets/sup-hero3.png';
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -160,11 +162,14 @@ const HeroHeader = () => {
             </p>
 
             {/* CTA Button */}
+            <Link to={"/landing"}>
+            
             <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-8">
               <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-orange-50 font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-orange-500/25">
                 Apply to Become a Partner
               </button>
             </div>
+            </Link>
 
             {/* Feature Pills */}
             <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-12">
