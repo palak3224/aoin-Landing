@@ -220,18 +220,18 @@ const HeroHeader = () => {
   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
 />
 
-<motion.img
+{/* <motion.img
   src={SupHero2Img}
   alt="Supporting Top Right"
   className="absolute -top-6 -right-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
   animate={{ x: [0, 20, 0] }}
   transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-/>
+/> */}
 
 <motion.img
   src={SupHero3Img}
   alt="Supporting Bottom Left"
-  className="absolute -bottom-6 -left-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
+  className="absolute -bottom-6 -right-6 w-24 h-36 md:w-36 md:h-60 rounded-lg shadow-lg border-2 border-white"
   animate={{ y: [0, 20, 0] }}
   transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
 />

@@ -12,7 +12,7 @@ import BottomRightPopup from '@/component/BottomRightPopup'
 function Home() {
   return (
     <div>
-      <BottomRightPopup />
+      {/* <BottomRightPopup /> */}
       <HeroSection />
       <BenefitsSection />
       <HowItWorksSection />

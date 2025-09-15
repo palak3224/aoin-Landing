@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Star, Users, TrendingUp, Shield, Headphones, Percent, Package, Zap } from 'lucide-react';
+import PricingImg from '@/assets/pricing.png'
 
 const PricingSection = () => {
   const [billingCycle, setBillingCycle] = useState('monthly');
@@ -21,7 +22,10 @@ const PricingSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 py-12 px-4">
+    <div className="relative overflow-hidden min-h-screen bg-gradient-to-br from-orange-50 to-orange-100 py-12 px-4">
+
+       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-300 rounded-full opacity-20 transform translate-x-32 -translate-y-32"></div>
+       <div className="absolute bottom-0 left-0 w-64 h-64 bg-orange-500 rounded-full opacity-20 transform -translate-x-16 translate-y-16"></div>
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -62,7 +66,7 @@ const PricingSection = () => {
                 <motion.span
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  className="absolute -top-1 -right-1 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded-full"
+                  className="absolute -top-2 -right-1 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded-full"
                 >
                   20% OFF
                 </motion.span>
@@ -80,31 +84,27 @@ const PricingSection = () => {
             transition={{ delay: 0.2 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <div className="relative overflow-hidden ">
               <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src={PricingImg}
                 alt="Online Business Success"
-                className="w-full h-96 lg:h-[500px] object-cover"
+                className="w-full h-96 lg:h-[800px] object-fit"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Start Your Success Story</h3>
-                <p className="text-white/90">Join thousands of sellers already growing with AoinStore</p>
-              </div>
+      
             </div>
             
             {/* Floating Stats */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-200"
+              className="absolute bottom-6 -right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-200"
             >
               <div className="text-center">
                 <div className="text-2xl font-bold text-orange-500">300M+</div>
                 <div className="text-sm text-gray-600">Active Users</div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right Side - Pricing Card */}
