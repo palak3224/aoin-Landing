@@ -7,7 +7,7 @@ const AoinBonusSection = () => {
   const features = [
     "Fast and easy start of your own Aoin store",
     "Access to 300 million active marketplace users",
-    "A share of Aoin's $514 billion in revenue"
+    "A share of Aoin's ₹514 billion in revenue"
   ];
 
   return (
@@ -43,7 +43,7 @@ const AoinBonusSection = () => {
               className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight"
             >
               Get an <span className="text-orange-600 bg-white px-2 rounded-md font-extrabold">Aoin</span> business<br />
-              package for $0
+              package for ₹0
             </motion.h2>
 
             {/* Subtitle */}
@@ -63,7 +63,7 @@ const AoinBonusSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="inline-block border-2 border-white rounded-full px-6 py-2 text-white font-semibold mb-8"
             >
-              Regular price: $399
+              Regular price: ₹2,999
             </motion.div>
 
             {/* Feature List */}
@@ -87,7 +87,8 @@ const AoinBonusSection = () => {
               ))}
             </motion.ul>
 
-            {/* CTA Button */}
+            <a href="https://aoinstore.com/register-business">
+            
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -98,6 +99,9 @@ const AoinBonusSection = () => {
             >
               GET NOW FOR FREE
             </motion.button>
+            </a>
+
+            {/* CTA Button */}
           </motion.div>
 
           {/* Right Image */}

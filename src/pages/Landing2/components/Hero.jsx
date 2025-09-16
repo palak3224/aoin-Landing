@@ -130,7 +130,7 @@ const Hero = () => {
 
             {/* Ticket Image */}
             <motion.div
-              className="flex items-center"
+              className="flex items-center "
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -144,6 +144,8 @@ const Hero = () => {
             </motion.div>
 
             {/* CTA Button */}
+
+            <a href="https://aoinstore.com/register-business" className="mt-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -161,6 +163,7 @@ const Hero = () => {
                 GET ALL FOR FREE
               </motion.button>
             </motion.div>
+            </a>
 
             {/* Small Text */}
             <motion.div
@@ -170,7 +173,7 @@ const Hero = () => {
               viewport={{ once: true }}
             >
               <p className="text-orange-100 text-sm drop-shadow-sm">
-                Try Sellvia for free for 14 days. $39/month after trial. Cancel anytime
+                Try Sellvia for free for 14 days. ₹2,999/month after trial. Cancel anytime
               </p>
             </motion.div>
           </motion.div>

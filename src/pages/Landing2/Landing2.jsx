@@ -10,20 +10,26 @@ import AoinBusinessPackage from './components/AoinBusinessPackage'
 import TestimonialCarousel from './components/TestimonialCarousel'
 import BusinessStartSection from './components/BusinessStartSection'
 import PricingSection from './components/PricingSection'
+import WhySellAoinStoreSection from './components/WhySellAoinStoreSection'
+import WhoCanSellSection from './components/WhoCanSellSection'
+import OfferStrip from '@/component/OfferStrip'
 
 const Landing2 = () => {
   return (
     <div>
+      <OfferStrip />
       <Hero />
       <FeaturesSection />
+      <PricingSection />
       <AoinBonusSection />
+      <WhoCanSellSection />
       <HowBusinessWorksSection />
+      <WhySellAoinStoreSection />
       <WhatWillISellSection />
       <StorePreviewSection />
       <FreeFeatures />
       <AoinBusinessPackage />
       <TestimonialCarousel />
-      <PricingSection />
       <BusinessStartSection />
     </div>
   )

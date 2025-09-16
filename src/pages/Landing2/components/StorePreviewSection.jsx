@@ -95,6 +95,8 @@ const StorePreviewSection = () => {
           </p>
         </motion.div>
 
+        <a href="https://aoinstore.com/register-business">
+        
         {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -113,6 +115,8 @@ const StorePreviewSection = () => {
             YES! I WANT IT!
           </motion.button>
         </motion.div>
+        </a>
+
       </div>
     </section>
   );

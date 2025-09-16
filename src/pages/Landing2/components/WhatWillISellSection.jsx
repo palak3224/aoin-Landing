@@ -6,52 +6,52 @@ const products = [
   {
     image: "https://www.vopmart.com/media/catalog/product/cache/ee14c5ab36c97d39d331f867fa3bee63/k/u/kunpeng_50-1.jpg",
     title: "Wireless Bluetooth Gamepad",
-    profit: "$34"
+    profit: "₹699"
   },
   {
     image: "https://cdn.shopify.com/s/files/1/0287/1138/7195/files/E900X_2.jpg?v=1722490661",
     title: "Wireless Gaming Headset",
-    profit: "$25"
+    profit: "₹2599"
   },
   {
     image: "https://shopatsc.com/cdn/shop/files/SRS-XV500-2500x2500.jpg?v=1708510005",
     title: "Portable Bluetooth Speaker",
-    profit: "$100"
+    profit: "₹999"
   },
   {
     image: "https://ae01.alicdn.com/kf/S2dc2cb8fea524be4b021092063992bfaZ.jpg",
     title: "Educational Toy for Toddlers",
-    profit: "$10"
+    profit: "₹299"
   },
   {
     image: "https://ptron.in/cdn/shop/products/61f5CIBmXQS._SL1100.jpg?v=1632972007",
     title: "Multifunction Charging Hub",
-    profit: "$80"
+    profit: "₹459"
   },
   {
     image: "https://static-01.daraz.pk/p/a586b3c48496a3a2098914eb9d9c10bd.jpg",
     title: "Transparent Smart Watch",
-    profit: "$65"
+    profit: "₹659"
   },
   {
     image: "https://i5.walmartimages.com/asr/bb7e3cdc-7e52-496c-a84e-8e8b942dabbe.409a6a1cb1db3380bdbb29580ba2bdc3.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
     title: "Mini Camera Drone",
-    profit: "$120"
+    profit: "₹1299"
   },
   {
     image: "https://res.cloudinary.com/jerrick/image/upload/v1686743064/6489a81809df18001d5562ab.jpg",
     title: "Virtual Reality Headset",
-    profit: "$95"
+    profit: "₹1999"
   },
   {
     image: "https://img.overclockers.co.uk/images/KB-04X-GR/530afdd839afe16a5f19d9b296e03fb9.jpg",
     title: "RGB Mechanical Keyboard",
-    profit: "$45"
+    profit: "₹459"
   },
   {
     image: "https://cdn.mos.cms.futurecdn.net/Pk5ydxYo6ty2Q4SX9vznP6.jpg",
     title: "Smart Fitness Tracker Band",
-    profit: "$30"
+    profit: "₹2999"
   }
 ];
 
@@ -132,6 +132,8 @@ const products = [
           </div>
         </div>
 
+        <a href="https://aoinstore.com/register-business">
+        
         {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -150,6 +152,8 @@ const products = [
             START SELLING TODAY
           </motion.button>
         </motion.div>
+        </a>
+
       </div>
     </section>
   );

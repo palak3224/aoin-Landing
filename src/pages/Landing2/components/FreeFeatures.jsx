@@ -78,8 +78,11 @@ const FreeFeatures = () => {
           ))}
         </div>
 
+
         {/* CTA Button */}
         <div className="text-center">
+        <a href="https://aoinstore.com/register-business">
+        
           <motion.button
             className="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-10 py-4 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform"
             whileHover={{ scale: 1.02 }}
@@ -87,8 +90,9 @@ const FreeFeatures = () => {
           >
             GET ALL FOR FREE
           </motion.button>
+        </a>
           <p className="text-sm text-gray-500 mt-4">
-            Try <span className='font-bold text-orange-500'>Aoin</span> for free for 14 days. $39/month after trial. Cancel anytime
+            Try <span className='font-bold text-orange-500'>Aoin</span> for free for 14 days. ₹2,999/month after trial. Cancel anytime
           </p>
         </div>
       </div>

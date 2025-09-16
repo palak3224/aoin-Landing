@@ -99,7 +99,9 @@ const BusinessStartSection = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              {/* Primary CTA Button */}
+
+              <a href="https://aoinstore.com/register-business">
+              
               <motion.button
                 className="w-full sm:w-auto bg-gradient-to-r from-yellow-400 to-yellow-300 hover:from-yellow-500 hover:to-yellow-400 text-orange-900 font-bold text-xl px-12 py-4 rounded-lg shadow-2xl transition-all duration-300 border-2 border-yellow-500"
                 whileHover={{ 
@@ -108,8 +110,10 @@ const BusinessStartSection = () => {
                 }}
                 whileTap={{ scale: 0.98 }}
               >
-                START NOW FOR $0
+                START NOW FOR ₹0
               </motion.button>
+              </a>
+              {/* Primary CTA Button */}
 
               {/* Secondary Button */}
               <motion.button
@@ -132,7 +136,7 @@ const BusinessStartSection = () => {
               viewport={{ once: true }}
             >
               <p className="text-orange-100 text-sm lg:text-base drop-shadow-sm opacity-90">
-                Try <span className="text-orange-500 bg-white font-bold p-2 rounded-md">Aoin</span> for free for 14 days. $39/month after trial. Cancel anytime
+                Try <span className="text-orange-500 bg-white font-bold p-2 rounded-md">Aoin</span> for free for 14 days. ₹2,999/month after trial. Cancel anytime
               </p>
             </motion.div>
           </motion.div>
@@ -167,7 +171,7 @@ const BusinessStartSection = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-sm text-gray-600 font-medium mb-1">Total Sales</div>
-                <div className="text-2xl font-bold text-orange-600">$11,637</div>
+                <div className="text-2xl font-bold text-orange-600">₹51,637</div>
                 <div className="text-xs text-green-600 font-medium">+12.3% vs last week</div>
               </motion.div>
 

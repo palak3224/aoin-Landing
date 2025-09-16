@@ -102,7 +102,7 @@ const AoinBusinessPackage = () => {
             {/* Price tag */}
             <div className="inline-block border border-gray-600 rounded-full px-4 py-2">
               <span className="text-gray-400">Regular price: </span>
-              <span className="text-orange-500 font-semibold">$399</span>
+              <span className="text-orange-500 font-semibold">₹2,999</span>
             </div>
 
             {/* Features list */}
@@ -123,6 +123,8 @@ const AoinBusinessPackage = () => {
               ))}
             </div>
 
+            <a href="https://aoinstore.com/register-business">
+            
             {/* CTA Button */}
             <motion.button
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 uppercase tracking-wide"
@@ -134,6 +136,8 @@ const AoinBusinessPackage = () => {
             >
               GET NOW FOR FREE
             </motion.button>
+            </a>
+
 
           </motion.div>
         </div>

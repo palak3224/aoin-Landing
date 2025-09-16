@@ -150,15 +150,16 @@ const HeroHeader = () => {
           <div className="text-left order-2 lg:order-1">
             {/* Hero Title */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
-              Sell Smarter. Go Global.{' '}
+              India’s Fastest Growing{' '}
               <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
-                Partner with Aoinstore.
+                Online Store
               </span>
             </h1>
 
             {/* Hero Subtitle */}
             <p className="text-base sm:text-lg md:text-xl text-orange-600 mb-6 sm:mb-8 leading-relaxed max-w-xl">
-              Expand your brand into the U.S., UK, and Australian markets with zero upfront cost and higher margins.
+              Reach lakhs of buyers, grow your business online, and earn more profit.
+
             </p>
 
             {/* CTA Button */}
@@ -184,7 +185,7 @@ const HeroHeader = () => {
             </div>
 
             {/* Stats Section */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-md">
+            {/* <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-md">
               <div className="text-center sm:text-left">
                 <div className="text-xl sm:text-2xl font-bold text-orange-300 mb-1">USA</div>
                 <div className="text-orange-200 text-xs">Market</div>
@@ -197,7 +198,7 @@ const HeroHeader = () => {
                 <div className="text-xl sm:text-2xl font-bold text-yellow-300 mb-1">AUS</div>
                 <div className="text-orange-200 text-xs">Market</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Image */}

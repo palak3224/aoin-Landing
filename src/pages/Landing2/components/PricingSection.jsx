@@ -123,11 +123,11 @@ const PricingSection = () => {
                     <span className="text-3xl font-bold">{pricing[billingCycle].inr}</span>
                     <span className="text-sm opacity-80 ml-1">INR</span>
                   </div>
-                  <span className="opacity-60">or</span>
-                  <div>
+                  {/* <span className="opacity-60">or</span> */}
+                  {/* <div>
                     <span className="text-3xl font-bold">{pricing[billingCycle].usd}</span>
                     <span className="text-sm opacity-80 ml-1">USD</span>
-                  </div>
+                  </div> */}
                 </div>
                 <p className="text-sm opacity-90 mt-2">per {pricing[billingCycle].period}</p>
               </div>
@@ -156,7 +156,8 @@ const PricingSection = () => {
                   ))}
                 </div>
 
-                {/* CTA Button */}
+                <a href="https://aoinstore.com/register-business">
+                
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -164,6 +165,9 @@ const PricingSection = () => {
                 >
                   Get Started Today
                 </motion.button>
+                </a>
+
+                {/* CTA Button */}
 
                 {/* Benefits */}
                 <div className="flex justify-center gap-4 text-xs text-gray-500">
