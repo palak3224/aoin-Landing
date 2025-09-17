@@ -140,10 +140,12 @@ const FAQSection = () => {
               <p className="text-orange-100 mb-8 text-lg max-w-md mx-auto leading-relaxed">
                 Our expert support team is ready to help you succeed. Get personalized assistance within minutes.
               </p>
+              <a href="https://aoinstore.com/register-business" target="_blank" rel="noopener noreferrer">
               <button className="group bg-white text-orange-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-orange-50 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center mx-auto space-x-2">
                 <MessageCircle className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 <span>Contact Support</span>
               </button>
+              </a>
             </div>
           </div>
         </div>

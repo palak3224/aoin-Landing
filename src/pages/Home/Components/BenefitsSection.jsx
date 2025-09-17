@@ -257,6 +257,7 @@ const BenefitsSection = () => {
           >
             Ready to transform your business with Aoinstore?
           </motion.p>
+          <a href="https://aoinstore.com/register-business" target="_blank" rel="noopener noreferrer">
           <motion.button 
             className="group relative px-12 py-5 bg-gradient-to-r from-orange-500 via-orange-600 to-amber-600 text-white font-semibold rounded-2xl shadow-xl overflow-hidden"
             whileHover={{ 
@@ -271,6 +272,7 @@ const BenefitsSection = () => {
             <span className="relative z-10">Get Started Today</span>
             <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-orange-700 to-amber-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </motion.button>
+          </a>
         </motion.div>
 
         {/* Decorative Elements */}

@@ -587,6 +587,7 @@ const GrowthTools = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
+          <a href="https://aoinstore.com/register-business" target="_blank" rel="noopener noreferrer">
           <motion.button
             className="group relative bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 hover:from-orange-600 hover:via-orange-500 hover:to-amber-500 text-white font-bold text-xl px-12 py-6 rounded-2xl shadow-2xl transition-all duration-500 overflow-hidden"
             whileHover={{ 
@@ -606,6 +607,7 @@ const GrowthTools = () => {
               </motion.div>
             </span>
           </motion.button>
+          </a>
         </motion.div>
       </div>
     </div>

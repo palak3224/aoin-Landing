@@ -4,10 +4,10 @@ import LogoImg from '@/assets/logo.svg';
 
 const PremiumFooter = () => {
   const footerLinks = [
-    { name: 'About Aoinstore', href: '#' },
-    { name: 'Partner Login', href: '#' },
-    { name: 'Support', href: '#' },
-    { name: 'Terms & Policies', href: '#' }
+    { name: 'About Aoinstore', href: '/landing' },
+    { name: 'Partner Login', href: 'https://aoinstore.com/register-business' },
+    { name: 'Support', href: 'https://aoinstore.com/contact' },
+    { name: 'Terms & Policies', href: 'https://aoinstore.com/terms' }
   ];
 
   const socialLinks = [
@@ -45,13 +45,13 @@ const PremiumFooter = () => {
                     <div className="bg-orange-100 p-2 rounded-full">
                       <Mail className="w-4 h-4 text-orange-600" />
                     </div>
-                    <span className="text-sm">support@aoinstore.com</span>
+                    <span className="text-sm">auoinstore@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-600">
                     <div className="bg-orange-100 p-2 rounded-full">
                       <Phone className="w-4 h-4 text-orange-600" />
                     </div>
-                    <span className="text-sm">+1 (555) 123-4567</span>
+                    <span className="text-sm">+91 9893361102</span>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const PremiumFooter = () => {
               </div>
               
               <div className="flex items-center space-x-6 text-sm text-gray-700">
-                <a href="#" className="hover:text-orange-600 transition-colors duration-300">Privacy Policy</a>
+                <a href="https://aoinstore.com/privacy-policy" className="hover:text-orange-600 transition-colors duration-300">Privacy Policy</a>
                 <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
                 <a href="#" className="hover:text-orange-600 transition-colors duration-300">Cookie Policy</a>
                 <span className="w-1 h-1 bg-gray-400 rounded-full"></span>

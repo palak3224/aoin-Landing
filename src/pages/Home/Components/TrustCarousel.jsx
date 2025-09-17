@@ -234,10 +234,12 @@ const TrustCarousel = () => {
         {/* Bottom CTA */}
         <div className={`text-center mt-16 transform transition-all duration-1500 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <p className="text-white/70 text-lg mb-6">Join our growing community of successful vendors</p>
+          <a href="https://aoinstore.com/register-business" target="_blank" rel="noopener noreferrer">
           <button className="group relative bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-bold px-10 py-4 rounded-2xl border border-white/30 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
             <span className="relative z-10">Start Selling Today</span>
           </button>
+          </a>
         </div>
       </div>
 
