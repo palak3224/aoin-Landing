@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, X } from 'lucide-react';
 import LogoImg from '@/assets/logo.svg';
 
 const PremiumFooter = () => {
@@ -11,11 +11,11 @@ const PremiumFooter = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'YouTube', icon: Youtube, href: '#' }
+    { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61578809217780' },
+    { name: 'X', icon: X, href: 'https://x.com/AUIN232475' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/aoinstore' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/aoinstore/' },
+    { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@AUIN-k6f' }
   ];
 
   return (
